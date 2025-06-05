@@ -21,7 +21,7 @@ Vous pouvez ici :
 # 1. Chargement des données directement depuis GitHub
 @st.cache_data
 def load_data():
-    url = "https://raw.githubusercontent.com/<TON-UTILISATEUR>/<TON-DEPOT>/main/Donné_F_Prophet.xlsx"
+    url = "PK"
     return pd.read_excel(url)
 
 try:
