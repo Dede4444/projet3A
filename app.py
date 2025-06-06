@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 # Configuration Streamlit
 st.set_page_config(page_title="Prévision du prix du blé", layout="wide")
 
-st.title("🌾 Prévision du Prix du Blé avec Prophet")
+st.title("Prévision du Prix du Blé avec Prophet")
 st.markdown("""
-Bienvenue sur cette application de prévision du **prix du blé** 📉 basée sur le modèle Prophet de Meta AI.
+Bienvenue sur cette application de prévision du **prix du blé**  basée sur le modèle Prophet de Meta AI.
 Nous utilisons les données historiques du prix du blé, le **taux de change EUR/USD** et la **production mondiale annuelle de blé** comme variables explicatives.
 
 Vous pouvez ici :
@@ -18,7 +18,7 @@ Vous pouvez ici :
 - Explorer les tendances sous-jacentes
 """)
 
-# 1. Chargement des données directement depuis GitHub
+# 1. Chargement des données
 @st.cache_data
 def load_data():
     url = "https://raw.githubusercontent.com/Dede4444/projet3A/refs/heads/main/Donn%C3%A9_F_Prophet.xlsx"
@@ -85,4 +85,4 @@ st.dataframe(forecast_display.reset_index(drop=True), use_container_width=True)
 
 # 11. Footer
 st.markdown("---")
-st.markdown("**🧠 Modèle utilisé :** Prophet de Meta | **Données :** prix du blé, taux de change, production mondiale | **Auteur :** Ton Nom / Projet Étudiant / 2025")
+st.markdown("**🧠 Modèle utilisé :** Prophet de Meta | **Données :** prix du blé, taux de change, production mondiale | **Auteur :André DEGLAIRE, Maylis RAVEL, Léon MATHE, Philibert HENNIAUX, Maxence DEHEDIN**")
